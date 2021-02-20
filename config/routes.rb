@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'mains/index'
+  root to: 'mains#index'
+
+  resources :mains, only:[:index]
+  resources :places do
+    resources :comments, only:[:create]
+  end
 end
