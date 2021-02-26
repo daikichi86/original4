@@ -12,13 +12,13 @@
 ### 使用した言語
 Ruby、HTML、CSS、Javascript
 
-ソース管理
+### ソース管理
 Github
 
 # 課題や実装したい機能
-・webpackerで使用したbootstrapのCSS,JSの読み込み
-・herokuへのデプロイ
-・AWS S3による画像のストレージ管理
+・webpackerで使用したbootstrapのCSS,JSの読み込み  
+・herokuへのデプロイ  
+・AWS S3による画像のストレージ管理  
 ・Active:Hashによって読み込まれたカテゴリーと国のリストをselect2を利用し、ビューを調整させること。
 
 # データベース
@@ -33,7 +33,7 @@ Github
 
 ### Association
 
--has_many :places
+-has_many :places  
 -has_many :comments, dependent: :destroy
 
 ## places テーブル
@@ -48,12 +48,12 @@ Github
 
 ### Association
 
--has_one_attached :image
--belongs_to :user
+-has_one_attached :image  
+-belongs_to :user  
 -has_many :comments, dependent: :destroy
 
--extend ActiveHash::Associations::ActiveRecordExtensions
-  -belongs_to :category
+-extend ActiveHash::Associations::ActiveRecordExtensions  
+  -belongs_to :category  
   -belongs_to :country
 
 ## comments テーブル
@@ -65,5 +65,5 @@ Github
 
 ### Association
 
--belongs_to :user
+-belongs_to :user  
 -belongs_to :place
