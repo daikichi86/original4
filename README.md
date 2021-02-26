@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# アプリ名
+
+## Discover great places
+
+
